@@ -1,0 +1,192 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+
+html , body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*  Links */
+
+#link-container {  
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px; 
+    
+}
+
+#link-container a {
+   margin: 0 10px;
+  text-decoration: none;
+  padding: 3.5px;
+  color: #000;
+}
+
+#link-container img {
+    
+      width: 1.5rem;   
+      height: auto;
+      
+}
+
+/* Margin imaginaria */
+
+#margin-up {
+   margin: 6rem;
+}
+
+/* Principal da barra de pesquisa imagem google*/
+
+#pattern-container {
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    padding: 15px;
+}
+
+#pattern-container img {
+    height: auto;
+    width: 272px;
+    margin: 0.5rem;
+    margin-bottom: 10px;
+}
+
+#btn-container {
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input[type="text"] { 
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom:20px;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+/*  Final com footer*/
+
+
+#footer-container {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    background: rgb(230, 232, 235);
+    text-align: start;
+    padding: 10px;
+}
+
+#footer-container a{
+   text-decoration: none;
+   font-size: 14px;
+   padding: 10px;
+   color: #000;
+}
+
+/* Mobile */
+
+@media(max-width:450px) {
+
+    html, body {
+        flex-direction: column;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #link-container {
+        display: flex;
+        justify-content: left;
+        text-align: center;
+    }
+
+    #link-container a {
+        font-size: 20px;
+    }
+
+    #link-container img {
+        height: auto;
+        width: 2rem;
+    }
+
+    #margin-up {
+        margin: 2rem;
+    }
+
+    #pattern-container {
+       justify-content: center;
+       
+        
+    }
+
+    input[type="text"] { 
+        padding: 10px;
+        width: 390px;
+        border: 1px solid #ccc;
+        border-radius: 24px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom:20px;
+        margin: 0;
+    }
+
+    input[type="submit"] {
+        display: none;
+    }
+
+    #footer-container a{
+        margin: 0.7rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1px;
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+
+
